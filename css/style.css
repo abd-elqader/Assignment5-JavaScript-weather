@@ -1,0 +1,115 @@
+:root {
+    --main-color: #1E202B;
+    --footer-color: #262936;
+    --brand-color: #009ad8
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.bg-img  {
+    background-image:  linear-gradient(to right, #00000093, #5e5c5c9d), url(../img/pexels-thatguycraig000-1525612.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+::placeholder{
+    color: gray !important;
+}
+
+nav {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.main-color {
+    color: var(--main-color);
+}
+
+.bg-footer-color {
+    background-color: var(--footer-color) !important;
+}
+
+.bg-main-color {
+    background-color: var(--main-color)!important;
+}
+
+.brand-color {
+    color: var(--brand-color) !important;
+}
+
+.text-small {
+    font-size: 8px;
+}
+
+input[type="text"], textarea {
+
+    color : #d1d1d1 !important;   
+    border : none
+}
+
+#btnSearch, #btnSubscribe {
+    border-radius: 2rem;
+    left: 100%;
+    top: 50% ; 
+    transform: translate(-104%,-50%);
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+ul li div{
+
+    background-color: var(--main-color);
+    color: var(--brand-color);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+
+    transition: all 0.5s;
+}
+
+ul li div:hover {
+
+    background-color: #1E202B;
+    color: white;
+    background-color: var(--brand-color);
+}
+
+ul li a {
+
+    border: transparent 4px solid !important;
+    border-radius: 20px ;
+    padding: 20px;
+}
+
+ul li a:hover {
+    color: var(--brand-color) !important;    
+    border-color: var(--brand-color) !important;
+}
+
+.active {
+    color: var(--brand-color) !important;    
+    border-color: var(--brand-color) !important;
+}
+
+.py-8 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.my-6 {
+    margin-top: 4rem !important;
+    margin-bottom: 4rem !important;
+}

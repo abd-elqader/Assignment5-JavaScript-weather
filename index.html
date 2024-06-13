@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- DEMO: https://bit.ly/3S145pj -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex gap-3" href="#">
+                <img src="./img/logo.png" alt="Bootstrap">
+                <div>
+                    <p class="fs-6 m-0">Weather</p>
+                    <p class="text-small m-0">tagline goes here</p>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto py-lg-4 gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link px-4 active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-img overflow-hidden" style="min-height: 400px;">
+        <div class="container">
+            <div id="searchForm" class="position-relative my-5">
+                <input type="text" class="form-control my-6 rounded-5 bg-main-color py-3 px-4" id="search" placeholder="Find your location...">
+                <button class="btn btn-primary position-absolute px-4" id="btnSearch">search</button>
+            </div>
+            <div class="card-group my-6" style="min-height: 500px;" >
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between bg-dark-subtle">
+                        <small class="text-muted">day</small>
+                        <small class="text-muted">date</small>
+                    </div>
+                    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                    <div class="card-body d-flex justify-content-between align-items-start flex-column bg-white-subtle">
+                        <h5 class="card-title">Cairo</h5>
+                        <p class="fs-1">temp c</p>
+                        <figure>
+                            <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" style="width: 100px;" alt="">
+                        </figure>
+                        <p class="card-text brand-color">status</p>
+                        <ul class="list-unstyled m-0 d-flex align-items-center gap-3 gap-xl-4">
+                            <li>
+                                <span>20%</span><i class ="fa-solid fa-umbrella fa-fw"></i>
+                            </li>
+                            <li>
+                                <span>18km/h</span><i class ="fa-solid fa-wind fa-fw"></i>
+                            </li>
+                            <li>
+                                <span>East</span><i class="fa-solid fa-compass fa-fw"></i>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header d-flex justify-content-center bg-black text-white ">
+                        <small>day</small>
+                    </div>
+                    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column bg-dark text-white">
+                        <figure>
+                            <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" class="" alt="">
+                        </figure>
+                        <div class="degree my-3">
+                            <h5 class="card-title">max</h5>
+                            <p class="card-text">min</p>
+                        </div>
+                        <p class="card-text brand-color">status</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header d-flex justify-content-center align-items-center bg-dark-subtle">
+                        <small>day</small>
+                    </div>
+                    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column bg-white-subtle">
+                        <figure>
+                            <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" class="" alt="">
+                        </figure>
+                        <div class="degree my-3">
+                            <h5 class="card-title">max</h5>
+                            <p class="card-text">min</p>
+                        </div>
+                        <p class="card-text brand-color">status</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <footer class="bg-footer-color text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <div id="subscribeForm" class="position-relative mb-3">
+                        <input type="text" class="form-control rounded-5 bg-main-color py-3 px-4 " id="subscribe" placeholder="Enter your email to subscribe...">
+                        <button class="btn btn-primary position-absolute px-4" id="btnSubscribe">Subscribe</button>
+                    </div>
+                    <div class="text-white-50">
+                        <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                    </div>
+                </div>
+                <div class="col-4 brand-color ">
+                    <ul class="list-unstyled d-flex justify-content-center align-items-center gap-3 gap-xl-4">
+                        <li>
+                            <div class="rounded-circle">
+                                <i class="fa-brands fa-facebook-f fa-fw"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rounded-circle">
+                                <i class="fa-brands fa-twitter fa-fw"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rounded-circle">
+                                <i class="fa-brands fa-google-plus fa-fw"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rounded-circle">
+                                <i class="fa-brands fa-pinterest fa-fw"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
