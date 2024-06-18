@@ -59,7 +59,7 @@
                 <button class="btn btn-primary position-absolute px-4" id="btnSearch">search</button>
             </div>
             <div class="card-group my-6" style="min-height: 500px;" id="weatherData" >
-                <div class="card">
+                <div class="card today">
                     <div class="card-header d-flex justify-content-between bg-dark-subtle">
                         <small class="text-muted">day</small>
                         <small class="text-muted">date</small>
@@ -74,23 +74,22 @@
                         <p class="card-text brand-color">status</p>
                         <ul class="list-unstyled m-0 d-flex align-items-center gap-3 gap-xl-4">
                             <li>
-                                <span>20%</span><i class ="fa-solid fa-umbrella fa-fw"></i>
+                                <span>presentage%</span><i class ="fa-solid fa-umbrella fa-fw"></i>
                             </li>
                             <li>
-                                <span>18km/h</span><i class ="fa-solid fa-wind fa-fw"></i>
+                                <span>wind speed km/h</span><i class ="fa-solid fa-wind fa-fw"></i>
                             </li>
                             <li>
-                                <span>East</span><i class="fa-solid fa-compass fa-fw"></i>
+                                <span>direcation</span><i class="fa-solid fa-compass fa-fw"></i>
                             </li>
                         </ul>
 
                     </div>
                 </div>
-                <div class="card">
+                <div class="card tomorrow">
                     <div class="card-header d-flex justify-content-center bg-black text-white ">
                         <small>day</small>
                     </div>
-                    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
                     <div class="card-body d-flex justify-content-center align-items-center flex-column bg-dark text-white">
                         <figure>
                             <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" class="" alt="">
@@ -102,11 +101,10 @@
                         <p class="card-text brand-color">status</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card after-tomorrow">
                     <div class="card-header d-flex justify-content-center align-items-center bg-dark-subtle">
                         <small>day</small>
                     </div>
-                    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
                     <div class="card-body d-flex justify-content-center align-items-center flex-column bg-white-subtle">
                         <figure>
                             <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" class="" alt="">
